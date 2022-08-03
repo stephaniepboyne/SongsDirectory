@@ -20,9 +20,8 @@ public class Songwriter {
     @OneToMany(mappedBy = "songwriter")
     private List<Song> songs;
 
-    public Songwriter(String name, List<Song> songs) {
+    public Songwriter(String name) {
         this.name = name;
-        this.songs = songs;
     }
 
     public Songwriter(){
